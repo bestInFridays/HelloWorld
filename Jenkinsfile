@@ -17,5 +17,9 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-    }
+        stage ('Extra'){
+            steps{
+                echo 'This is just an extra stage...'
+            }
+        }
 }
