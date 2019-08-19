@@ -17,7 +17,9 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        post{
+    }
+    
+    post{
             success{
                 echo "Success!"
             }
@@ -25,5 +27,4 @@ pipeline {
                 echo "Failed! Retry!"
             }
         }
-    }
 }
