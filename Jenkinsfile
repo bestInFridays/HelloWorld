@@ -22,4 +22,5 @@ pipeline {
                 echo 'This is just an extra stage...'
             }
         }
+    }
 }
