@@ -17,5 +17,13 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        post{
+            success{
+                echo "Success!"
+            }
+            failure{
+                echo "Failed! Retry!"
+            }
+        }
     }
 }
