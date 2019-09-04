@@ -12,11 +12,12 @@ pipeline{
                          }
                 }
             }
-        }
+
         post {
           failure {
             echo "Scan & Pull failed."
           }
+        }
         }
     }
 }
